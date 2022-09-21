@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Prova-Teste</string>
+    <string name="resultText">Hello</string>
+    <string name="roll_button">Button</string>
+</resources>
