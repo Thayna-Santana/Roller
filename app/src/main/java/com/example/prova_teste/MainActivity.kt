@@ -12,8 +12,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rollButton: Button = findViewById(R.id.roll_button)
-        rollButton.setOnClickListener { rollDice(1..6) }
+        rollButton.setOnClickListener { rollDice() }
 
-        val resultText: TextView = findViewById(R.id.result_text)
+
         }
+    fun rollDice(){
+        val randomInt = (1..6).random()
+        val resultTextView: TextView = findViewById(R.id.rollDice)
+        resultTextView.text = randomInt.toString()
+    }
 }
